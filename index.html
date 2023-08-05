@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTv2</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <main id="app">
+      <div id="timer" class="flex" >
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+
+      <section id="controls" class="flex" >
+        <button 
+        data-action="toggleRunning"
+        class="play">
+        <img src="./assets/play.svg" alt="" />
+        </button>
+
+        <button class="stop">
+          <img src="./assets/stop.svg" alt="" />
+        </button>
+
+        <button class="plus">
+          <img src="./assets/plus.svg" alt="" />
+        </button>
+        
+        <button class="minus">
+          <img src="./assets/minus.svg" alt="" />
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
